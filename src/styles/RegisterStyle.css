@@ -1,0 +1,11 @@
+.from-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.register-from{
+    border: 1px solid black;
+    padding: 30px;
+    width: 30%;
+}
