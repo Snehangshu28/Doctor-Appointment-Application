@@ -12,10 +12,16 @@ const LoginPage = () => {
 
   //on finish
 
+  const handelLoder = () =>{
+    window.location.reload();
+
+  }
+
   const onFinistHandelar = async(values) => {
     try {
       dispatch(showLoading())
       const res = await axios.post('/api/v1/user/login', values);
+      handelLoder();
       dispatch(hideLoading())
       if (res.data.success) {
         localStorage.setItem('token', res.data.token);

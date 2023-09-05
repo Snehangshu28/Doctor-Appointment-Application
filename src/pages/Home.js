@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import axios from "axios";
+import Layout from '../components/Layout';
 
 const Home = () => {
 
@@ -25,7 +26,7 @@ const Home = () => {
  },[])
   return (
     <>
-    <div>home</div>
+    <Layout><h1>home</h1></Layout>
     </>
   )
 }
